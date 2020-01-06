@@ -1,0 +1,140 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	background: white;
+	color: #0080FF;
+	font-family: 'Nunito', sans-serif;
+}
+
+.container {
+	display: flex;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	width: 30%;
+	background-color: #F3F8F2;
+	border-radius: 25px;
+}
+
+header {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 50px;
+}
+
+header h1 {
+	font-weight: 100;
+	font-size: 55px;
+	color: #3176A8;
+	margin-top: -20px;
+}
+
+#game-board {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 25px;
+	margin: 30px auto;
+	border: 2px solid #0080FF;
+	width: 100%;
+}
+
+.grid-item {
+	text-align: center;
+	border: 2px solid #0080FF;
+	width: 33.33%;
+	height: 0;
+	padding-bottom: 33.33%;
+	color: #3176A8;
+	font-family: 'Nunito', sans-serif;
+	font-size: 50px;
+}
+
+.grid-item h1 {
+	margin: 0 auto;
+	margin-top: 15%;
+	cursor: pointer;
+}
+
+.game-over {
+	width: 100%;
+	display: flex;
+}
+
+#victory-message {
+	width: 50%;
+	font-size: 25px;
+	line-height: 25px;
+	padding-top: 14px;
+}
+
+.play-again {
+	width: 50%;
+	line-height: 25px;
+	font-size: 25px;	
+}
+
+button {
+	color: white;
+	background-color: #0080FF;
+	border: 0;
+	font-size: 25px;
+	line-height: 25px;
+	padding: 15px;
+	border-radius: 15px;
+	float: right;
+}
+
+.play-again button:hover {
+	background-color: #3581B8;
+}
+
+.play-again button:active {
+	background-color: #2B6996;
+}
+
+@media only screen and (max-width: 1600px) {	
+	.grid-item {
+		font-size: 40px;
+	}
+}
+
+@media only screen and (max-width: 1366px) {	
+	.container {
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 964px) {	
+	.container {
+		width: 45%;
+	}
+	.grid-item {
+		font-size: 35px;
+	}
+}
+
+@media only screen and (max-width: 800px) {	
+	.container {
+		width: 60%;
+	}
+	.grid-item {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 414px) {	
+	.container {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 320px) {	
+	header {
+		margin-top: 0;
+	}
+}
